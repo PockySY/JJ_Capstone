@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3ca0ff"
+    tools:context=".Search">
+
+    <LinearLayout
+        android:id="@+id/search_bar_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="120dp"
+            android:layout_height="82dp"
+            android:background="@drawable/log_btn"
+            android:text="&lt;"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/search_bar"
+            android:layout_width="291dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="-3dp"
+            android:background="@drawable/title_style"
+            android:gravity="center"
+            android:text="탐색"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/filter_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar_linearLayout">
+
+        <TextView
+            android:id="@+id/dropdown_filter"
+            android:layout_width="341dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/filter_style"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:text="필터 추가 (드롭다운)"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/filter"
+            android:layout_width="341dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/filter_style"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:text="적용된 필터"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/info1_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_linearLayout">
+
+        <TextView
+            android:id="@+id/st_Icon1"
+            android:layout_width="98dp"
+            android:layout_height="124dp"
+            android:background="@drawable/log_style"
+            android:text="상호 아이콘"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/st_bar1"
+            android:layout_width="244dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="-55dp"
+            android:background="@drawable/log_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info2_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info1_linearLayout">
+
+        <TextView
+            android:id="@+id/st_Icon2"
+            android:layout_width="98dp"
+            android:layout_height="124dp"
+            android:background="@drawable/log_style"
+            android:text="상호 아이콘"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/st_bar2"
+            android:layout_width="244dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="-55dp"
+            android:background="@drawable/log_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info3_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info2_linearLayout">
+
+        <TextView
+            android:id="@+id/st_Icon3"
+            android:layout_width="98dp"
+            android:layout_height="124dp"
+            android:background="@drawable/log_style"
+            android:text="상호 아이콘"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/st_bar3"
+            android:layout_width="244dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="-55dp"
+            android:background="@drawable/log_style" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

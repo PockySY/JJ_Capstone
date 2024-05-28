@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:shape="rectangle" >
+    <solid android:color="#FF6A7C8C" />
+
+    <!-- 테두리 스타일 지정 -->
+    <stroke
+        android:width="5dp"
+        android:color="#FF3D4653" />
+
+    <!-- 모퉁이 둥글게 처리 -->
+    <corners
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp" />
+</shape>

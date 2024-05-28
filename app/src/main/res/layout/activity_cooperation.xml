@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cooperation_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3ca0ff"
+    tools:context=".Cooperation">
+
+    <LinearLayout
+        android:id="@+id/cooperation_bar_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="120dp"
+            android:layout_height="82dp"
+            android:background="@drawable/log_btn"
+            android:text="&lt;"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/cooperation_bar"
+            android:layout_width="291dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="-3dp"
+            android:background="@drawable/title_style"
+            android:gravity="center"
+            android:text="제휴업체"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/company1"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/log_style"
+        android:gravity="center|left"
+        android:text="\n   ● 업체명\n   ● 업체종류\n   ● 제휴혜택\n   ● 위치\n"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cooperation_bar_linearLayout" />
+
+    <TextView
+        android:id="@+id/company2"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/log_style"
+        android:gravity="center|left"
+        android:text="\n   ● 업체명\n   ● 업체종류\n   ● 제휴혜택\n   ● 위치\n"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company1" />
+    <TextView
+        android:id="@+id/company3"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/log_style"
+        android:gravity="center|left"
+        android:text="\n   ● 업체명\n   ● 업체종류\n   ● 제휴혜택\n   ● 위치\n"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company2" />
+    <TextView
+        android:id="@+id/company4"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/log_style"
+        android:gravity="center|left"
+        android:text="\n   ● 업체명\n   ● 업체종류\n   ● 제휴혜택\n   ● 위치\n"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

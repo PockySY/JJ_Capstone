@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/location_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#319AE7"
+    tools:context=".Location">
+
+    <LinearLayout
+        android:id="@+id/location_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="120dp"
+            android:layout_height="82dp"
+            android:background="@drawable/log_btn"
+            android:text="&lt;"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/location_bar"
+            android:layout_width="291dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="-3dp"
+            android:background="@drawable/title_style"
+            android:gravity="center"
+            android:text="맛 지도"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/locationView"
+        android:layout_width="324dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/log_style"
+        android:gravity="center"
+        android:text="지도"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
